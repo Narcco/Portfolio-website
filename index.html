@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arad Hazari</title>
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <strong data-name></strong>
+
+        <div class="nav-right">
+          <div class="nav-links" id="main-nav"></div>
+          <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="home">
+      <section class="home-layout">
+        <section class="card identity">
+          <h1>Arad Hazari</h1>
+          <p class="identity-meta">
+            Life Sciences · Pre-Med<br />
+            York University · GPA 4.0
+          </p>
+        </section>
+
+        <section class="card hero-card">
+          <h2 data-title></h2>
+          <p data-intro></p>
+
+          <button id="download-cv" type="button">
+            Download CV (PDF)
+          </button>
+        </section>
+      </section>
+
+      <section class="card">
+        <h2>Highlights</h2>
+        <ul class="two-col" id="home-highlights"></ul>
+      </section>
+
+      <div class="section-grid">
+        <div class="card">
+          <h2>Focus Areas</h2>
+          <div class="chip-row" id="home-skills"></div>
+        </div>
+
+        <div class="card">
+          <h2>Current Priorities</h2>
+          <ul id="home-focus"></ul>
+        </div>
+
+        <div class="card">
+          <h2>Quick Metrics</h2>
+          <div class="stats-row" id="home-metrics"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/theme.js" defer></script>
+
+    <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-left">Arad Hazari · Life Sciences · Pre-Med</span>
+
+
+    <span class="footer-meta">© Built with intent</span>
+  </div>
+</footer>
+  </body>
+</html>

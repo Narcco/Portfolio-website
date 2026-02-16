@@ -1,0 +1,23 @@
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  header,
+  nav,
+  #theme-toggle,
+  #download-cv {
+    display: none;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2 {
+    color: black;
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact · Arad Hazari</title>
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <strong data-name></strong>
+
+        <div class="nav-right">
+          <div class="nav-links" id="main-nav"></div>
+          <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+<main class="contact-page">
+  <section class="contact-card">
+    <h1>Contact Me</h1>
+    <p class="muted">
+      Send me a message directly via email.
+    </p>
+
+<form id="contact-form" class="contact-grid">
+  <!-- LEFT COLUMN -->
+  <div class="contact-left">
+    <label>
+      Your Name
+      <input
+        type="text"
+        id="contact-name"
+        placeholder="Your name"
+        required
+      />
+    </label>
+
+    <label>
+      Your Email
+      <input
+        type="email"
+        id="contact-email"
+        placeholder="your@email.com"
+        required
+      />
+    </label>
+
+    <button type="submit" class="contact-send">
+      Send Email
+    </button>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="contact-right">
+<label>
+  <textarea
+    id="contact-message"
+    rows="10"
+    placeholder="Write your message here..."
+    required
+  ></textarea>
+</label>
+  </div>
+</form>
+  </section>
+
+  <section class="card">
+    <h2>Contact Details</h2>
+    <div class="info-list" id="contact-details"></div>
+  </section>
+
+  <div class="section-grid">
+    <div class="card">
+      <h2>Availability</h2>
+      <ul id="contact-availability"></ul>
+    </div>
+
+    <div class="card">
+      <h2>Response Time</h2>
+      <p class="muted" id="contact-response"></p>
+    </div>
+
+    <div class="card">
+      <h2>Links</h2>
+      <div class="links-list" id="contact-links"></div>
+    </div>
+  </div>
+
+  <section class="card">
+    <h2>FAQ</h2>
+    <div class="faq-list" id="contact-faq"></div>
+  </section>
+</main>
+
+
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/contact.js" defer></script>
+
+
+    <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-left">Arad Hazari · Life Sciences · Pre-Med</span>
+
+
+    <span class="footer-meta">© Built with intent</span>
+  </div>
+</footer>
+  </body>
+</html>

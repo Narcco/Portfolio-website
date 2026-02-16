@@ -1,0 +1,109 @@
+/* Dashboard */
+.dashboard {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.dashboard h1 {
+  margin-bottom: 2rem;
+}
+
+.dashboard section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Forms */
+label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+textarea,
+input {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+
+  background: #0f1115;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+}
+
+/* Buttons */
+button {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Experience list */
+#exp-list {
+  margin-top: 1.5rem;
+}
+
+.exp-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.exp-item span {
+  font-size: 0.9rem;
+}
+
+.exp-item button {
+  margin-top: 0;
+  background: transparent;
+  color: var(--muted);
+  border: none;
+  cursor: pointer;
+}
+
+.exp-item button:hover {
+  color: #ff6b6b;
+}
+
+@media (max-width: 700px) {
+  .dashboard {
+    margin: 2.5rem auto;
+    padding: 1.5rem;
+  }
+
+  .exp-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .dashboard {
+    margin: 2rem 1rem;
+    padding: 1.25rem;
+  }
+}
